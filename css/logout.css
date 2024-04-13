@@ -1,0 +1,95 @@
+/* Styles from home.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  spline-viewer {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; 
+  }
+  
+  #button-container {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+  }
+  
+  #add-task-btn {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-family: monospace;
+    background-color: rgba(128, 0, 128, 0.6);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 1s ease;
+    opacity: 0.8;
+    z-index: 9999;
+    text-decoration: none;
+  }
+  
+  #add-task-btn:hover {
+    background-color: rgba(128, 0, 128, 0.8);
+    transform: scale(1.05);
+  }
+  
+  /* Additional styles for logout popup */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    font-family: monospace;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .popup-content p {
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .popup-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    background-color: rgba(148, 51, 186, 0.6);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .popup-button:hover {
+    background-color: rgba(72, 5, 103, 0.8);
+    transform: scale(1.05);
+  }
+  
